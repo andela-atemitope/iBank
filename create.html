@@ -1,27 +1,44 @@
 <!DOCTYPE HTML>
 <html>
-
-        <title> ibank </title>
-        <script type="text/javascript" src="js/main.js"></script>
-   <head>
+    <head>
+     <script type="text/javascript" src="js/main.js"></script>
      <link  rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" >
-     <link rel="stylesheet" href=" http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+     <scipt type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
      <link rel="stylesheet" href="main.css">
      <script type="text/javascript" src="js/main.js"></script>
+     <link href="ibankfavicon.png" rel="icon" type="image/png" />
+     <title> iBank </title>
    </head>
    <body>
     <nav class="navbar navbar-default">
-    <div class="container-fluid">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-     <a class="navbar-brand" href="#">
-      <img alt="Brand" src="ibankinline.png" class="pull">
-        </a>
-      </div>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="ibankinline.png" class="img-responsive" width="100px" height="100px">
+      </a>
     </div>
-  </nav>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-wrap">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="dashboard.html" class="btn btn-primary">Dashboard</a></li>
+        <li><a href="index.html" class="btn btn-danger">Logout</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 
-    <center>
+     <center>
      <div class="jumbotron">
       <div class="container">
         <h1> Create an account </h1>
@@ -43,7 +60,7 @@
 <div class="input-group input-group-lg">
   <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
 
-       <input type="text" name="username"  placeholder="User Name" id="username" class="form-control" required>
+       <input type="text" name="username"  placeholder="Email Address" id="email" class="form-control" required>
      <br><br>
 </div>
 
@@ -51,7 +68,22 @@
 <div class="input-group input-group-lg">
   <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
 
-       <input type="password" name="password"  placeholder="Preffered Password" id="password" class="form-control" required>
+       <input type="text" name="username"  placeholder="Preferred Username" id="username" class="form-control" required>
+     <br><br>
+</div>
+
+<br />
+<div class="input-group input-group-lg">
+  <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+
+       <input type="password" name="password"  placeholder="Preferred Password" id="password" class="form-control" required>
+     <br><br>
+</div>
+        <br/>
+        <div class="input-group input-group-lg">
+  <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+
+       <input type="password" name="password"  placeholder="Confirm Password" id="confirmPassword" class="form-control" required>
      <br><br>
 </div>
         <br />

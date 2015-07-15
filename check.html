@@ -1,23 +1,42 @@
 <!DOCTYPE HTML>
 <html>
    <head>
-   <link  rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" >
-     <link rel="stylesheet" href=" http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+     <link  rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" >
+     <link rel="stylesheet" href="css/bootstrap.min.css">
      <link rel="stylesheet" href="main.css">
+     <scipt type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
      <script type="text/javascript" src="js/main.js"></script>
+     <link href="ibankfavicon.png" rel="icon" type="image/png" />
+     <title> iBank </title>
+   </head>
+    <body>
 
-        <title> ibank </title>
-       <body>
        <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-           <a class="navbar-brand" href="#">
-            <img alt="Brand" src="ibankinline.png" class="col-lg-9 col-lg-offset-3" postion="absolute">
-            <button type="button" onclick="window.location.assign('dashboard.html')" class="btn btn-primary nav-btn btn-lg">DASHBOARD</button>
-             <a class="btn btn-danger navbar-btn btn-lg btn-info"type="button" href=".html" href="main.html" class="btn pull-right"  class="col-lg-9 col-lg-offset-3"> logout </button></a>
-         </div>
-        </div>
-      </nav>
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="ibankinline.png" class="img-responsive" width="80px" height="80px">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-wrap">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="dashboard.html" class="btn btn-primary">Dashboard</a></li>
+        <li><a href="index.html" class="btn btn-danger">Logout</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
     <!--<ri> 
         <button type="button" href="logout()" action="logout()">LOGOUT</button>
         <button type="button" onclick="window.location.assign('dashboard.html')">DASHBOARD</button>
@@ -25,9 +44,8 @@
     <center>
     <div class="jumbotron">
         <div class="container">
-        <h1>Balance Enquiry</h1>
+            <h1><strong>Balance Enquiry</strong></h1>
           <script type="text/javascript">
-            welcomeUser();
             displayBalance();
           </script>
         </div>
@@ -35,3 +53,5 @@
     </center>
    </body>
 </html>
+
+
