@@ -9,7 +9,7 @@ function clicked (){
             alert("Password incorrect!!");
         }
 	}else{
-        alert("Username not valid!!");
+        alert("Username or password not valid!!");
     }
 }
 

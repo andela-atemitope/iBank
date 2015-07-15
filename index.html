@@ -10,22 +10,23 @@
 
       </head>
    <body>
-    <img src="ibanklogobig"> 
+   <div class="jumbotron">
+     <div class="container">
+    <img src="ibanklogobig.png" width="384px" height="399" > 
       <h1> Welcome to iBank </h1>
-     <br/>
-     <p> The Bank for YOU! </p>
-
-     <script type="text/javascript" src="js/main.js"></script>
-
-
-          <p> New user? </p>
-          <button type="button" onclick="window.location.assign('create.html')"> CREATE ACCOUNT</button>
-
-       <br/>
-       <p> <em> Already a member?? </em></p>
-       <br/>
-      <button type="button" onclick="window.location.assign('main.html')"> LOGIN </button>
-
+     
+     <p><em> The Bank for YOU! </em></p>
+        <div class="container">
+          <p><small><em> New user? </em></p>
+          <button type="button" onclick="window.location.assign('create.html')" class="btn btn-lg btn-warning"> CREATE ACCOUNT</button>
+            <br><br>
+          <div class="container">
+           <p><small> <em> Already a member?? </em></small></p>
+           <button type="button" onclick="window.location.assign('login.html')" class="btn btn-lg btn-primary"> LOGIN </button>
+          </div>
+      </div>
+     </div>
+    </div>
  </center>
    </body>
 </html>

@@ -2,21 +2,78 @@
   <html>
     <title> ibank </title>
    <head>
+     <link  rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" >
+     <link rel="stylesheet" href=" http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+     <link rel="stylesheet" href="main.css">
      <script type="text/javascript" src="js/main.js"></script>
    </head>
    <body>
-   <left> 
-        <button type="button" href="logout()" action="logout()">LOGOUT</button>
-        <button type="button" onclick="window.location.assign('dashboard.html')">DASHBOARD</button>
-   </left>
-    <center>
-    <h1> Transfer </h1>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+           <a class="navbar-brand" href="#">
+            <img alt="Brand" src="ibankinline.png" class="col-lg-9 col-lg-offset-3">
+             <a class="btn btn-danger navbar-btn btn-lg btn-info btn pull-right" type="button" href="main.html"> Logout </button></a>
+             <button type="button" onclick="window.location.assign('dashboard.html')" class="btn btn-danger navbar-btn btn-lg btn-info pull-right"> DASHBOARD</button>
+         </div>
+        </div>
+      </nav>
+   
+        <!--<button type="button" href="logout()" action="logout()">LOGOUT</button>-->
+        
+   
+     <div class="jumbotron">
+       <div class="container">
+        <h1> Transfer </h1>
+          <br>
+         <script type="text/javascript">
+           welcomeUser();
+         </script>
+           <div class="row">
+             <div class="col-sm-6 col-sm-offset-3">
+                <div class="input-group input-group-lg">
+                 <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                 <input type="text" name="accountname" placeholder="Reciepent Account Name"  id="transferAccName" class="form-control" required>
+                </div>
+                <br />
+              <div class="input-group input-group-lg">
+               <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+               <input type="number" name="transferAccNo"  placeholder="Recepient Account Number" id="transferAccNo" class="form-control" required>
+                <br><br>
+              </div>
+              <br/>
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                 <input type="number" name="transferAmount"  placeholder="Amount" id="transferAmount" class="form-control" required>
+                  <br><br>
+                 </div>
+                <br/>
+             <div class="input-group input-group-lg">
+               <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span>  </span>
+                 <input type="password" name="password"  placeholder="Confirm Your Password" id="transferPass" class="form-control" required>
+                <br><br><br/>
+               </div>
+              <br/>
+              <div class="col-lg-offset-6 col-lg-3"> 
+                <button type="button" onclick="transferFunds()" class="btn btn-lg btn-primary btn-lg"> transfer </button>
+               <br />
+              </div>
+            </div>
+           </div>
+        </div>
+      </div>
+
+    </center>
+   </body>
+</html>
+
+
+ 
+   <!-- <h1> Transfer </h1>
     <script type="text/javascript">
         welcomeUser();
     </script>
-    Enter the Account name: <br />
-    <input type="text" id="transferAccName">
-    <br />
+   
     Enter the Account Number: <br />
     <input type="number" id="transferAccNo">
     <br />
@@ -26,9 +83,4 @@
     Confirm your password: <br/>
     <input type="password" id = "transferPass">
     <br />
-    <br />
-    <button type="button" onclick="transferFunds()"> transfer </button>
-
-    </center>
-   </body>
-</html>
+    <br />-->
